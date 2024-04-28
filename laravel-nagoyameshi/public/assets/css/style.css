@@ -1,0 +1,304 @@
+:root {
+  --bs-link-color: #d95204;
+  --bs-link-hover-color: #ae4203;
+}
+
+.text-center {
+  text-align: center;
+  margin: 10 auto;
+}
+
+.orange-links {
+  color: #ef5333;
+  text-decoration: none;
+}
+.orange-btn {
+  background-color: #ef8133;
+  transition: 0.15s;
+  width: 200px;
+}
+
+.orange-btn:hover {
+  background-color: #ef6b33;
+  transition: 0.15s;
+}
+
+.orange-marks {
+  color: #ef8133;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 116px);
+}
+
+main {
+  min-height: calc(100vh - 116px);
+  box-sizing: border-box;
+}
+
+.header-container {
+  background-color: #f78f57;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-container {
+  background-color: #f78f57;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 20px;
+}
+
+.flash_message {
+  color: rgb(0, 170, 0);
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.alert > ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* container */
+
+.auth-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.container500 {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px; 
+  display: flex;
+  flex-flow: column;
+  min-height: 500px;
+}
+
+.container500vh {
+  min-height: calc(100vh - 116px);
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+}
+
+
+.container600 {
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px; 
+  display: flex;
+  flex-flow: column;
+  min-height: 500px;
+}
+
+.container800 {
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px; 
+  display: flex;
+  flex-flow: column;
+  min-height: 500px;
+}
+
+
+.container800vh {
+  min-height: calc(100vh - 116px);
+  width: 800px;
+  margin: 0 auto;
+}
+
+.container1000vh {
+  min-height: calc(100vh - 116px);
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+.auth-container * label {
+  font-size: 0.9em;
+}
+
+.auth-contents {
+  color: #ef8133;
+  text-decoration: none;
+  text-align: center;
+}
+
+.form-control::placeholder {
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+/* top */
+
+.top-container {
+  min-height: calc(100vh - 110px);
+  background-color: black;
+}
+
+.top-bg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-text {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+}
+
+.top-text * {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+/* restaurants */
+
+.restaurant-search {
+  width: 200px;
+  margin: 0 10px;
+}
+
+.restaurant-search > input {
+  display: inline-block;
+  width: 100px;
+}
+
+.restaurants-card-img {
+  width: 33%;
+  object-fit: cover;
+}
+
+.reviw-card {
+  border-radius: .375rem;
+  padding: 12px;
+  border: 1px solid #000000;
+  height: 100px;
+  width: 100%;
+  background: orange;
+}
+
+#card-element {
+  border-radius: .375rem;
+  padding: 12px;
+  border: 1px solid #d7dce1;
+  height: 40px;
+  width: 100%;
+  background: white;
+}
+
+/* star-rating */
+.star-rating {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #cccccc;
+}
+.star-rating::before, 
+.star-rating::after {
+  content: '★★★★★';
+}
+.star-rating::after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #f29f05;
+}
+
+.star-rating[data-rate="0"]::after {
+  width: 0%;
+}
+
+.star-rating[data-rate="0.5"]::after {
+  width: 10%;
+}
+
+.star-rating[data-rate="1"]::after {
+  width: 20%;
+}
+
+.star-rating[data-rate="1.5"]::after {
+  width: 30%;
+}
+
+.star-rating[data-rate="2"]::after {
+  width: 40%;
+}
+
+.star-rating[data-rate="2.5"]::after {
+  width: 50%;
+}
+
+.star-rating[data-rate="3"]::after {
+  width: 60%;
+}
+
+.star-rating[data-rate="3.5"]::after {
+  width: 70%;
+}
+
+.star-rating[data-rate="4"]::after {
+  width: 80%;
+}
+
+.star-rating[data-rate="4.5"]::after {
+  width: 90%;
+}
+
+.star-rating[data-rate="5"]::after {
+  width: 100%;
+}
+
+/* Heading */
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (min-width: 1400px) {
+    .main-container {
+      max-width: 1200px;
+    }
+  }
